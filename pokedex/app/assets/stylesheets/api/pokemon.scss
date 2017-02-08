@@ -1,3 +1,39 @@
 // Place all the styles related to the Api::Pokemon controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.detail{
+  background: grey;
+  width: 70%;
+  height: 900px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.detail > h2 {
+  color: white;
+}
+
+.detail > img{
+  height: 200px;
+  width: 200px;
+}
+
+.index > li > a > img{
+  height: 50px;
+  width: 50px;
+}
+
+.index > li{
+  list-style: none;
+}
+
+.index{
+  weight: 25%;
+  border-style: solid;
+  border-width: 5px;
+  box-shadow: 10px 10px 5px #888888;
+}

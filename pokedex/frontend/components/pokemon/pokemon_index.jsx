@@ -13,7 +13,7 @@ export default class PokemonIndex extends React.Component {
     return (
       <div>
         {this.props.children}
-        <ul>
+        <ul  className="index">
           {pokemonItems}
         </ul>
       </div>
