@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const PokemonIndexItem = ({ poke }) => {
   return(
     <li>
-      <Link to={`api/pokemon/${poke.id}`}>
+      <Link to={`/pokemon/${poke.id}`}>
       {poke.name}
       <img src={poke.image_url}/>
       </Link>

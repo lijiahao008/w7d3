@@ -1,6 +1,6 @@
-import { RECEIVE_ALL_POKEMON } from '../actions/pokemon_actions';
+import { RECEIVE_ALL_POKEMON, RECEIVE_POKE } from '../actions/pokemon_actions';
 
-const pokemonReducer = (oldState = {}, action) => {
+export const pokemonReducer = (oldState = {}, action) => {
   switch(action.type){
     case RECEIVE_ALL_POKEMON:
       return action.pokemon;
@@ -10,5 +10,11 @@ const pokemonReducer = (oldState = {}, action) => {
   }
 };
 
-
-export default pokemonReducer;
+export const pokeDetailReducer = (oldState = {}, action) => {
+  switch(action.type){
+    case RECEIVE_POKE:
+      return action.poke;
+    default:
+      return oldState;
+  }
+};
